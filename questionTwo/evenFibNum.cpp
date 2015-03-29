@@ -6,7 +6,7 @@ int main(){
 	int firstNum = 1;
 	int secondNum = 2;
 	int nextNum = 0;
-	int totalEvenFibNumSum = 0;
+	int totalEvenFibNumSum = 2;
 	while(nextNum <= 4000000){
 
 		nextNum = firstNum + secondNum;
@@ -25,3 +25,5 @@ int main(){
 
 	cout << "Total Even numbers is = " << totalEvenFibNumSum << endl;	
 }
+
+
