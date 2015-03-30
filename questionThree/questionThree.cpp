@@ -5,8 +5,8 @@
 using namespace std;
 
 bool isPrime(int x){
-	int primeSqrt = (int)sqrt(x);
-	for(int i = 2; i < primeSqrt; i++){
+	
+	for(int i = 2; i < x; i++){
 		if (x % i == 0){
 			return 0;
 		}
@@ -16,13 +16,13 @@ bool isPrime(int x){
 
 int main (){
 
-	int maxPrime = 1;
-	int squarRootInt = (int)sqrt(600851475143);
+	int maxPrime = 2;
+	int long number = 600851475143;
 	
-	for(int i = 1; i < squarRootInt; i++){
-		if(600851475143 % i == 0){
-			if(i > maxPrime){
-				if(isPrime(maxPrime)){
+	for(int i = 1; i < number; i++){
+		if(number % i == 0){
+			if(isPrime(i)){
+				if(maxPrime < i){
 					maxPrime = i;
 					cout << "Max prime found: " << maxPrime << endl;
 				}	
@@ -32,6 +32,5 @@ int main (){
 	
 	
 	cout << "The max prime is: " << maxPrime << endl;
-	cout << "The max squarRootInt is: " << squarRootInt << endl;
 	
 }
