@@ -25,6 +25,7 @@ int main (){
 				if(maxPrime < i){
 					maxPrime = i;
 					cout << "Max prime found: " << maxPrime << endl;
+					continue;
 				}	
 			}
 		}
@@ -32,5 +33,7 @@ int main (){
 	
 	
 	cout << "The max prime is: " << maxPrime << endl;
+
+
 	
 }
